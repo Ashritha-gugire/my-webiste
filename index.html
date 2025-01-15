@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashritha Gugire - Personal Website</title>
+    <!-- Adding Montserrat for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Setting Times New Roman as default body font */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Headings using Montserrat */
+        h1, h2, h3, .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: #ddd;
+        }
+
+        .hero {
+            height: 40vh;
+            background-image: url('/assests/Cover_photo.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            background-color: #f8f9fa;  /* Light grayish background */
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Adding a subtle texture to the page background */
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .profile-section {
+            text-align: center;
+        }
+
+        .profile-section p {
+            font-size: 0.95rem;
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #333;
+            margin-top: 1.5rem;
+        }
+
+        .bio-section p {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+            color: #444;
+        }
+
+        .bio-section a {
+            color: #2c5282;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .bio-section a:hover {
+            color: #1a365d;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .bio-section h2 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Computer Science | Data Analysis | Machine Learning</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Research.html">Research</a>
+                <a href="projects.html">Projects</a>
+                <a href="Personal Interests.html">Non-Academic</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Ashritha Gugire</h1>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <div class="profile-section">
+            <img src="assests/profile-photo.png" alt="Profile Photo" class="profile-image">
+            <p>Data Analyst</p>
+            <p>M.Sc Data Analytics and Engineering</p>
+            <p>George Mason University</p>
+        </div>
+
+        <div class="bio-section">
+            <h2>About Me</h2>
+            <p>I am a dynamic Data Analytics specialist currently serving as a Research Data Analyst at George Mason University, <a href="https://care.gmu.edu/" target="_blank">Center for Assurance Research and Engineering</a>, with Professors <a href="https://www.gmu.edu/profiles/jauffret-0" target="_blank">Jean Pierre Auffret</a> and <a href="https://business.gmu.edu/profiles/aray8" target="_blank">Abhishek Ray</a>, collaborating with Deloitte.
+                My work centers on applying advanced analytical techniques to urban mobility, knowledge graphs, and agent movement pattern analysis. 
+                I specialize in leveraging AI/ML methods to derive insights that inform decision-making, particularly in urban planning and behavioral analytics.</p>
+
+            <p>With an M.Sc. in Data Analytics Engineering from George Mason University, my expertise spans from data analysis methodologies, including Natural Language Processing, Business Intelligence, and anomaly detection. 
+            I actively contribute to research initiatives that bridge complex data structures with actionable insights. 
+            My approach integrates both inductive and deductive reasoning to simplify multifaceted data challenges, driving impactful outcomes for organizations and research groups.</p>
+            
+            <h2>Education</h2>
+            <p>Before M.Sc, I graduated from VBIT Hydearbad, with Bachelors in Computer Science Engineering (2021) (Course work: Data Structures, Operating Systems, Cloud Computing, Computer Architecture, Advanced Analytics). I was fortunate to work on interesting Technology Problems with Shivanand at Infosys Hyderabad.</p>
+            <p>At GMU, I completed my Masters in Data Analytics, Modelling, Administration (Course work: Data Analysis and Analysis of Algorithms, Machine Learning, NLP, Operational Research) in the year 2023 & 2024 respectively.</p>
+            <p>During these studies I was fortunate to do projects under Professors <a href="https://www.gmu.edu/profiles/dliao2" target="_blank">Lindi Liao</a>, Jean Pierre Auffret, <a href="https://www.gmu.edu/profiles/idassana">Isuru Dassanayake</a>.</p>
+        </div>
+    </main>
+</body>
+</html>
