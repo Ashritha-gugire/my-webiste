@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ashritha Gugire</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f0f2f5;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+        }
+
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: #ddd;
+        }
+
+        .hero {
+            height: 40vh;
+            background-image: url('assests/projects.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 3.2rem;
+            position: relative;
+            z-index: 1;
+            letter-spacing: 1px;
+        }
+
+        .content {
+            max-width: 1500px;
+            margin: 2rem auto;
+            padding: 2.5rem;
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .Projects-section {
+            margin-bottom: 2.5rem;
+        }
+
+        .project-item {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+        }
+
+        h3 {
+            color: #2c3e50;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        h3 a {
+            font-size: 0.9rem;
+            color: #2c5282;
+            text-decoration: none;
+            margin-left: 1rem;
+            font-weight: normal;
+            transition: color 0.3s;
+        }
+
+        h3 a:hover {
+            color: #1a365d;
+            text-decoration: underline;
+        }
+
+        p {
+            color: #444;
+            line-height: 1.7;
+            margin-bottom: 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        .nested-list {
+            list-style-type: none;
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .nested-list li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            padding-left: 1.2rem;
+            line-height: 1.6;
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        .nested-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #666;
+        }
+
+        b {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .content {
+                padding: 1.5rem;
+                margin: 1rem;
+            }
+
+            h3 {
+                font-size: 1.3rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            h3 a {
+                margin-left: 0;
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">Data Analysis | Machine Learning | Data Visualization | SQL | Python</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Research.html">Research</a>
+                <a href="projects.html">Projects</a>
+                <a href="Personal Interests.html">Non-Academic</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>PROJECTS</h1>
+    </div>
+
+    <div class="content">
+        <div class="Projects-section">
+            <div class="project-item">
+                <h3>State-Level Analysis: Education, Incarceration & Public Safety <a href="https://github.com/Ashritha-gugire/Statistical-analysis-and-Data-visualizations/blob/main/Redesigning%20Graphs.md">(Re-designing Bad Graphs)</a></h3>
+                <p><b>Project Overview:</b> This project analyzes the relationship between state-level education and prison spending alongside public safety outcomes through advanced data visualization and regional mapping across the United States.</p>
+                <ul class="nested-list">
+                    <li>Research Methodology - Data Collection from multiple public sources, Regional Segmentation, Integration of poverty rates as a key analytical variable</li>
+                    <li>Key Findings - Identified significant disparities, Discovered correlations between regional poverty rates and public safety outcomes, Analyzed impact of funding and mapped regional variables</li>
+                    <li>Data Visualization Approaches - Interactive US state map showing regional distributions, Comparative analysis charts of education vs. prison funding</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Skin Cancer Diagnosis - Advanced Image Processing with PyTorch <a href="https://github.com/Ashritha-gugire/skin-cancer-diagnosis-pytorch">(Github Link)</a></h3>
+                <p><b>Project Overview:</b> This project aims to develop an image processing algorithm using Convolutional Neural Networks (CNNs) to identify specific types of skin cancer from 10,000 clinical images.</p>
+                <ul class="nested-list">
+                    <li>Technical Approach - PyTorch implementation with custom CNN architecture, Advanced preprocessing techniques for medical imaging, Modified ResNetX101 optimized for skin lesion classification</li>
+                    <li>Healthcare Impact - Enhanced capability for early-stage skin cancer identification, Assists medical professionals in diagnostic decision-making, improved accuracy</li>
+                    <li>Future Development - Integration of HMM-based genomic data analysis, Expansion of the training dataset for improved accuracy, Development of user-friendly interface for clinical deployment</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Predicting Loan Defaults - Machine Learning for Risk Assessment</h3>
+                <p><b>Project Overview:</b> Developed a comprehensive loan default prediction system using Logistic Regression and Decision Trees to analyze borrower characteristics and loan attributes for accurate risk assessment.</p>
+                <ul class="nested-list">
+                    <li>Key Insights - Larger loan amounts show lower default rates, suggesting more careful planning, Bankruptcy history increases default risk (41.8% vs 11.5%)</li>
+                    <li>Model Development - Implemented logistic regression for primary analysis, Conducted extensive exploratory data analysis, Developed decision tree models for comparison, Evaluated model performance using accuracy metrics Applications & Impact</li>
+                    <li>Future Development - Investigate anonymized variables in depth, Experiment with advanced machine learning models, Explore demographic and cultural factors</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Virginia Climate Data Dashboard - Climate Adaptation and Resilience Planning Tool <a href="https://public.tableau.com/app/profile/deepthi.p1508/viz/VirginiaClimateIndicators-2/VirginiaClimateIndicators">(Dashboard Link)</a></h3>
+                <p><b>Project Overview:</b> Developed an interactive climate data dashboard for Virginia's municipal planners, integrating NOAA's NCEI data to support evidence-based climate adaptation strategies and resilience planning.</p>
+                <ul class="nested-list">
+                    <li>Technical Architecture - Python-based data pipeline for NOAA nClimGrid data extraction, County-level geographical data integration, Bankruptcy history increases default risk (41.8% vs 11.5%)</li>
+                    <li>Research Insights - 2.53°F average monthly increase statewide, 7.65 inches statewide increase with regional variations, Northward progression of extreme heat challenges, 12 counties showing declining precipitation patterns</li>
+                    <li>Practical Applications - Supporting evidence-based climate adaptation strategies, Informing climate resilience initiatives, Guiding water and environmental resource planning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
